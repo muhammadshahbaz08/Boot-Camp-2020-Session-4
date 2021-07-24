@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Message } from "./message";
-import "./App.css";
+import "../Style/App.css";
 
 export const App = () => {
   let [count, setCount] = useState(0);
