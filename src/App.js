@@ -1,12 +1,12 @@
 import React, { useState } from "react";
+import { Message } from "./message";
 
 export const App = () => {
   let [count, setCount] = useState(0);
-
   return (
     <div className="box">
-      <h2>Value of Counter Variable is : {count}</h2>
-      <button onClick={()=>setCount(++count)}>Update Count</button>
+      <Message counter={count}/>
+      <button onClick={() => setCount(++count)}>Update Count</button>
     </div>
   );
 };
