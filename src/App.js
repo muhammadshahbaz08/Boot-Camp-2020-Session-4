@@ -1,7 +1,12 @@
-import React , {useState} from 'react'
+import React, { useState } from "react";
 
 export const App = () => {
-  return(
-    <h1>Hello</h1>
-  )
-}
+  let [count, setCount] = useState(0);
+
+  return (
+    <div className="box">
+      <h2>Value of Counter Variable is : {count}</h2>
+      <button onClick={()=>setCount(++count)}>Update Count</button>
+    </div>
+  );
+};
